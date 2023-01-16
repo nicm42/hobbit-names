@@ -7,7 +7,7 @@ require('dotenv').config();
 const app = express();
 const port = process.env.PORT || 8000;
 
-const link = 'https://the-one-api.dev/v2/character?race=Hobbit';
+const link = 'https://the-one-api.dev/v2/character?race=Hobbit&sort=name:asc';
 const key = process.env.API_KEY;
 const headers = {
   Accept: 'application/json',
