@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Name from './components/Name';
 import './App.css';
 
 function App() {
@@ -28,8 +29,15 @@ function App() {
   return (
     <div className="App">
       <div>Boys:</div>
-      {boys.map((hobbit) => hobbit.name.split(' ')[0])}
-      {girls.map((hobbit) => hobbit.name.split(' ')[0])}
+      <ul>
+        {boys &&
+          boys.map((hobbit) => <Name name={hobbit.name} key={hobbit._id} />)}
+      </ul>
+      <div>Girls:</div>
+      <ul>
+        {girls &&
+          girls.map((hobbit) => <Name name={hobbit.name} key={hobbit._id} />)}
+      </ul>
     </div>
   );
 }
