@@ -1,6 +1,6 @@
 # Hobbit Names
 
-> Lists of hobbit names from The Lord of the Rings using [The One API](https://the-one-api.dev/)
+> Lists of names from The Lord of the Rings using [The One API](https://the-one-api.dev/)
 
 ## Table of contents
 
@@ -14,7 +14,7 @@
 
 ## General info
 
-I name my hamsters using hobbit names. I wanted lists of names in one place to make it easier to choose a name. I also wanted them split by boys names and girls names, so I only had to look at one list depending on whether I was naming a boy or a girl hamster.
+I name my hamsters using names from Lord of the Rings. I wanted lists of names in one place to make it easier to choose a name. I also wanted them split species and then by boys names and girls names, so I only had to look at one list depending on whether I was naming a boy or a girl hamster.
 
 ## Screenshots
 
