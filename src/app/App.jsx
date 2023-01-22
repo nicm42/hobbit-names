@@ -67,12 +67,16 @@ function App() {
       <div>Boys:</div>
       <ul>
         {boys &&
-          boys.map((hobbit) => <Name name={hobbit.name} key={hobbit._id} />)}
+          boys.map((character) => (
+            <Name name={character.name} key={character._id} />
+          ))}
       </ul>
       <div>Girls:</div>
       <ul>
         {girls &&
-          girls.map((hobbit) => <Name name={hobbit.name} key={hobbit._id} />)}
+          girls.map((character) => (
+            <Name name={character.name} key={character._id} />
+          ))}
       </ul>
     </div>
   );
