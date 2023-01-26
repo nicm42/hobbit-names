@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
-import Name from './components/Name';
 import Select from './components/Select';
+import Button from './components/Button';
+import Name from './components/Name';
 import './App.css';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
   const [race, setRace] = useState();
   const [boys, setBoys] = useState([]);
   const [girls, setGirls] = useState([]);
+  const [genderToShow, setGenderToShow] = useState();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -64,20 +66,38 @@ function App() {
         />
       </form>
       {loading && <div>Loading...</div>}
-      <div>Boys:</div>
-      <ul>
-        {boys &&
-          boys.map((character) => (
-            <Name name={character.name} key={character._id} />
-          ))}
-      </ul>
-      <div>Girls:</div>
-      <ul>
-        {girls &&
-          girls.map((character) => (
-            <Name name={character.name} key={character._id} />
-          ))}
-      </ul>
+      <Button
+        value="boys"
+        text="Show boys names"
+        setGenderToShow={setGenderToShow}
+      />
+      <Button
+        value="girls"
+        text="Show girls names"
+        setGenderToShow={setGenderToShow}
+      />
+      {genderToShow === 'boys' && (
+        <div>
+          <h2>Boys:</h2>
+          <ul>
+            {boys &&
+              boys.map((character) => (
+                <Name name={character.name} key={character._id} />
+              ))}
+          </ul>
+        </div>
+      )}
+      {genderToShow === 'girls' && (
+        <div>
+          <h2>Girls:</h2>
+          <ul>
+            {girls &&
+              girls.map((character) => (
+                <Name name={character.name} key={character._id} />
+              ))}
+          </ul>
+        </div>
+      )}
     </div>
   );
 }
