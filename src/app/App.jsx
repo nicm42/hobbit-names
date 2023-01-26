@@ -66,16 +66,20 @@ function App() {
         />
       </form>
       {loading && <div>Loading...</div>}
-      <Button
-        value="boys"
-        text="Show boys names"
-        setGenderToShow={setGenderToShow}
-      />
-      <Button
-        value="girls"
-        text="Show girls names"
-        setGenderToShow={setGenderToShow}
-      />
+      {race && genderToShow !== 'boys' && (
+        <Button
+          value="boys"
+          text="Show boys names"
+          setGenderToShow={setGenderToShow}
+        />
+      )}
+      {race && genderToShow !== 'girls' && (
+        <Button
+          value="girls"
+          text="Show girls names"
+          setGenderToShow={setGenderToShow}
+        />
+      )}
       {genderToShow === 'boys' && (
         <div>
           <h2>Boys:</h2>
