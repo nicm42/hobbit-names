@@ -3,8 +3,10 @@
 body {
   background-colour: #d8f3dc;
   color: #081c15;
+  display: flex;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
+  justify-content: center;
 
   @supports (font-variation-settings: normal) {
     font-family: 'InterVariable', sans-serif;

@@ -1,3 +1,5 @@
+import './Name.css';
+
 function Name({ name }) {
   const firstName = name.split(' ')[0];
 

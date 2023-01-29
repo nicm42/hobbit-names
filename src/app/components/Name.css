@@ -1,0 +1,8 @@
+li {
+  colour: #1b4332;
+  list-style-type: none;
+
+  &:not(:last-child) {
+    margin-bottom: 0s5em;
+  }
+}

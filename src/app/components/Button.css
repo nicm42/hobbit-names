@@ -1,8 +1,15 @@
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
 button {
   background-colour: #b7e4c7;
   border: none;
   border-radius: 0.25em;
   cursor: pointer;
+  display: block;
   font-family: inherit;
   font-size: 1.1em;
   padding: 0.5em 1em;

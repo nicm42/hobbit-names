@@ -5,7 +5,7 @@ import Name from './components/Name';
 import './App.css';
 
 function App() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [characters, setCharacters] = useState([]);
   const [race, setRace] = useState();
   const [boys, setBoys] = useState([]);
@@ -69,21 +69,23 @@ function App() {
           }}
         />
       </form>
-      {loading && <div>Loading...</div>}
-      {race && genderToShow !== 'boys' && (
-        <Button
-          value="boys"
-          text="Show boys names"
-          setGenderToShow={setGenderToShow}
-        />
-      )}
-      {race && genderToShow !== 'girls' && (
-        <Button
-          value="girls"
-          text="Show girls names"
-          setGenderToShow={setGenderToShow}
-        />
-      )}
+      {loading && <div class="loading" />}
+      <div class="button-wrapper">
+        {race && genderToShow !== 'boys' && (
+          <Button
+            value="boys"
+            text="Show boys names"
+            setGenderToShow={setGenderToShow}
+          />
+        )}
+        {race && genderToShow !== 'girls' && (
+          <Button
+            value="girls"
+            text="Show girls names"
+            setGenderToShow={setGenderToShow}
+          />
+        )}
+      </div>
       {genderToShow === 'boys' && (
         <div>
           <h2>Boys:</h2>
