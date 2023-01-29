@@ -57,6 +57,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1>LOTR Names</h1>
       <form>
         <label htmlFor="race-select">Select race to show names from</label>
         <Select

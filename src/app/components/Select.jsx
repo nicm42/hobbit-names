@@ -1,5 +1,7 @@
 // https://www.joshwcomeau.com/react/data-binding/#select-12
 
+import './Select.css';
+
 const RACES = [
   {
     label: 'Select race',

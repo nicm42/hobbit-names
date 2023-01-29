@@ -1,3 +1,5 @@
+import './Button.css';
+
 function Button({ value, text, setGenderToShow }) {
   return (
     <button value={value} onClick={() => setGenderToShow(value)}>
