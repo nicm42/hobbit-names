@@ -3,6 +3,6 @@ li {
   list-style-type: none;
 
   &:not(:last-child) {
-    margin-bottom: 0s5em;
+    margin-bottom: 0.5em;
   }
 }

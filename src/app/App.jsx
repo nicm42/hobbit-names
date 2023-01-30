@@ -36,7 +36,7 @@ function App() {
       { _id: '21', name: 'Pearl Took' },
       { _id: '22', name: 'Peony (Baggins) Burrows' },
     ]);
-    setRace('Hobbits');
+    //setRace('Hobbits');
 
     //fetchData();
   }, []);

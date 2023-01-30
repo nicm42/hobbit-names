@@ -5,7 +5,7 @@
 }
 
 button {
-  background-colour: #b7e4c7;
+  background-colour: var(--green2);
   border: none;
   border-radius: 0.25em;
   cursor: pointer;
@@ -15,6 +15,6 @@ button {
   padding: 0.5em 1em;
 
   &:hocus {
-    background-colour: #95d5b2;
+    background-colour: var(--green3);
   }
 }
