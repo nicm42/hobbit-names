@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Loading from './components/Loading';
 import Select from './components/Select';
 import Button from './components/Button';
 import Name from './components/Name';
@@ -69,13 +70,7 @@ function App() {
           }}
         />
       </form>
-      {loading && (
-        <div className="loading">
-          <div className="dot" />
-          <div className="dot" />
-          <div className="dot" />
-        </div>
-      )}
+      {loading && <Loading />}
       <div className="button-wrapper">
         {race && genderToShow !== 'boys' && (
           <Button
