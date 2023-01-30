@@ -69,7 +69,13 @@ function App() {
           }}
         />
       </form>
-      {loading && <div className="loading" />}
+      {loading && (
+        <div className="loading">
+          <div className="dot" />
+          <div className="dot" />
+          <div className="dot" />
+        </div>
+      )}
       <div className="button-wrapper">
         {race && genderToShow !== 'boys' && (
           <Button
