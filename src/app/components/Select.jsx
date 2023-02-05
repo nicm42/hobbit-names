@@ -1,29 +1,7 @@
 // https://www.joshwcomeau.com/react/data-binding/#select-12
 
+import RACES from '../assets/races';
 import './Select.css';
-
-const RACES = [
-  {
-    label: 'Select race',
-    value: '',
-  },
-  {
-    label: 'Elf',
-    value: 'Elf',
-  },
-  {
-    label: 'Dwarf',
-    value: 'Dwarf',
-  },
-  {
-    label: 'Hobbit',
-    value: 'Hobbit',
-  },
-  {
-    label: 'Human',
-    value: 'Human',
-  },
-];
 
 function Select({ value, onChange }) {
   return (
