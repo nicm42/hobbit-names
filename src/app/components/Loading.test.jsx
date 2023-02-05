@@ -3,7 +3,7 @@ import Loading from './Loading';
 
 describe('Loading component tests', () => {
   beforeEach(() => {
-    const loading = render(<Loading />);
+    render(<Loading />);
   });
 
   test('should show loading text', () => {
