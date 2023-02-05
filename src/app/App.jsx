@@ -6,7 +6,7 @@ import Name from './components/Name';
 import './App.css';
 
 function App() {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [characters, setCharacters] = useState([]);
   const [race, setRace] = useState();
   const [boys, setBoys] = useState([]);
