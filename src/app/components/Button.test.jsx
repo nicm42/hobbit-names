@@ -21,7 +21,7 @@ describe('Button component tests', () => {
   });
 
   test('should call setGenderToShow on clicking', async () => {
-    await userEvent.click(await screen.findByRole('button', { value: 'boys' }));
+    await userEvent.click(await screen.getByRole('button', { value: 'boys' }));
     expect(setGenderToShow).toHaveBeenCalledWith('boys');
   });
 });
