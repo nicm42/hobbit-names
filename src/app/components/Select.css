@@ -1,0 +1,16 @@
+select {
+  background-colour: var(--green2);
+  border: none;
+  border-radius: 0.25em;
+  cursor: pointer;
+  display: block;
+  font-family: inherit;
+  font-size: 1.1em;
+  margin-block-start: 0.5em;
+  margin-block-end: 2em;
+  padding: 0.5em 1em;
+
+  &:hocus {
+    background-colour: var(--green3);
+  }
+}

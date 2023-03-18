@@ -1,0 +1,24 @@
+:root {
+  --animation-original-colour: var(--green4);
+  --animation-new-colour: var(--green7);
+  --animation-original-size: 1;
+  --animation-new-size: 1.1;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+
+  @supports (font-variation-settings: normal) {
+    font-variation-settings: 'wght' 700;
+  }
+}
+
+h2 {
+  margin-top: 1.5em;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
