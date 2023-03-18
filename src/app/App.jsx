@@ -29,20 +29,20 @@ function App() {
     };
 
     // For testing;
-    setBoys([
+    /* setBoys([
       { _id: '11', name: 'Bilbo Baggins' },
       { _id: '12', name: 'Gorhendad (Oldbuck) Brandybuck' },
     ]);
     setGirls([
       { _id: '21', name: 'Pearl Took' },
       { _id: '22', name: 'Peony (Baggins) Burrows' },
-    ]);
+    ]); */
     //setRace('Hobbits');
 
-    //fetchData();
+    fetchData();
   }, []);
 
-  /* useEffect(() => {
+  useEffect(() => {
     setBoys(
       characters.filter(
         (character) => character.race === race && character.gender === 'Male'
@@ -54,7 +54,7 @@ function App() {
         (character) => character.race === race && character.gender === 'Female'
       )
     );
-  }, [race]); */
+  }, [race]);
 
   return (
     <div className="App">
