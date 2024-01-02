@@ -35,7 +35,9 @@ I name my hamsters using names from Lord of the Rings. I wanted lists of names i
 
 ## Setup
 
-To view this project visit the [demo](https://lotr-names.onrender.com/) or download the files, open a terminal in that folder and install locally using npm:
+To view this project visit the [demo](https://lotr-names.onrender.com/). Note this is hosted on a free tier of Render so will take 30 seconds to start up.
+
+Or download the files, open a terminal in that folder and install locally using npm:
 
 ```
 npm install
